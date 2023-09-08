@@ -16,8 +16,8 @@ int main(void)
 
 
 		if (b != '9')
-		putchar(',');
-		putchar(' ');
+			putchar(',');
+			putchar(' ');
 	}
 
 
