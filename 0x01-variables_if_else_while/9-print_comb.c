@@ -1,22 +1,26 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
+ * main - entry point
  *
- * Return: 0 (Success)
+ * Return: 0 (success)
+ *
  */
 int main(void)
 {
-int k;
+	int b;
 
-for (k = 48; k <= 57; k++)
-{
-putchar(k);
-if (k < 57)
-{
-putchar(',');
-putchar(' ');
-}
-}
-putchar('\n');
-return (0);
+	for (b = '0'; b <= '9'; b++)
+	{
+		putchar(b);
+
+
+		if (b != '9')
+		putchar(',');
+		putchar(' ');
+	}
+
+
+	putchar('\n');
+	return (0);
 }
