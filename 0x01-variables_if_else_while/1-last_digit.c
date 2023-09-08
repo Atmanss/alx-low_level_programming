@@ -1,35 +1,30 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
 /**
- * main - entry point
+ * main - Entry point
  *
- * Description - Select a random number then select the last 2 digits
- *
- * Return: 0 (success)
- *
- *
-*/
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-    int n;
+	int n, num;
 
-    srand(time(0));
-    n = rand() - RAND_MAX / 2;
-    int last_digit = n % 10;
-
-    if (last_digit > 5)
-    {
-        printf("Last digit of %d is %d and it's greater than 5\n", n, last_digit);
-    }
-    else if (last_digit == 0)
-    {
-        printf("Last digit of %d is %d and is 0\n", n, last_digit);
-    }
-    else 
-    {
-        printf("Last digit of %d is %d and is less than 6 and not 0\n", n, last_digit);
-    }
-
-    return (0);
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	/* your code goes there */
+	num = n % 10;
+	if (num > 5)
+	{
+	printf("Last digit of %d is %d and is greater than 5\n", n, num);
+	}
+	else if (num == 0)
+	{
+	printf("Last digit of %d is %d and is 0\n", n, num);
+	}
+	else if (num < 6)
+	{
+	printf("Last digit of %d is %d and is less than 6 and not 0\n", n, num);
+	}
+	return (0);
 }
