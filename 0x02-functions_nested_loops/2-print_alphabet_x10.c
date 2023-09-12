@@ -4,8 +4,8 @@
  *print_alphabet - use _printchar function to print alphabet 10 times
  *
 */
-void print_alphabet_x10(void);
-
+void print_alphabet_x10(void)
+{
 
 	int line. ch;
 
@@ -15,3 +15,4 @@ void print_alphabet_x10(void);
 			_putchar(ch);
 		_putchar('\n');
 	}
+}
