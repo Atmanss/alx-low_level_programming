@@ -5,7 +5,8 @@
  *
 */
 void print_alphabet_x10(void);
-{
+
+
 	int line. ch;
 
 	for (line = 0; line <= 0; line++)
@@ -14,5 +15,3 @@ void print_alphabet_x10(void);
 			_putchar(ch);
 		_putchar('\n');
 	}
-
-}
