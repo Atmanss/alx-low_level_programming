@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet
+ * print_alphabet - use the _putchar function to print the alphabet
  *
 */
 void print_alphabet(void)
