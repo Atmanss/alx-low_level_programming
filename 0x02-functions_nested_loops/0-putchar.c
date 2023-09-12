@@ -1,3 +1,4 @@
+#include <unistd.h>
 #include "main.h"
 
 /**
@@ -5,18 +6,8 @@
  * Description: prints '_putchar\n'
  * Return: Always 0 (success)
  */
-int main(void)
+int _putchar(char c)
 {
-	char str[] = "_putchar";
-	int i = 0;
 
-
-	while (str[i] != '\0')
-	{
-	char c = str[i];
-
-	_putchar(c);
-	i++;
-	}
-	return (0);
+	return (write(1, &c, 1));
 }
