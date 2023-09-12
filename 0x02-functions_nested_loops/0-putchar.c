@@ -6,8 +6,15 @@
  * Description: prints '_putchar\n'
  * Return: Always 0 (success)
  */
-int _putchar(char c)
+int main(void)
 {
+	char str[] = "_putchar";
+	int ch;
 
-	return (write(1, &c, 1));
+	for (ch = 0; ch < 8; ch++)
+		_putchar(str[ch]);
+	_putchar('\n');
+
+	return (0);
+
 }
